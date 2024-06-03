@@ -79,5 +79,11 @@ func main() {
 	//bak2457()
 	//callBaseDijkstra()
 	//bak1920()
-	bak2230()
+	//bak2230()
+	//bak1806()
+	//bak7785()
+	//bak1015()
+	//bak1018()
+	//bak1026()
+	bak1388()
 }
