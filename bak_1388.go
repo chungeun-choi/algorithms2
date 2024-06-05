@@ -52,7 +52,3 @@ func bak1388() {
 
 	fmt.Fprintln(writer, count)
 }
-
-func main() {
-	bak1388()
-}
