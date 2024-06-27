@@ -101,5 +101,7 @@ func main() {
 	//baek15652()
 	//baek6198()
 	//baek3015()
-	baek22866()
+	//baek22866()
+	//baek10807()
+	baek1629()
 }
