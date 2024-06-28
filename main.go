@@ -1,7 +1,9 @@
 package main
 
 import (
+	"algorthms/baekjoon"
 	"algorthms/base/dijkstra"
+	"algorthms/programers"
 	"bufio"
 	"fmt"
 	"os"
@@ -12,11 +14,11 @@ import (
 func callBak1697() {
 	var N, K int
 	fmt.Scan(&N, &K)
-	fmt.Println(bfs(N, K))
+	fmt.Println(baekjoon.Bfs(N, K))
 }
 
 func callBack2468() {
-	fmt.Println(back2468())
+	fmt.Println(baekjoon.Back2468())
 }
 
 func callBack1926() {
@@ -33,17 +35,17 @@ func callBack1926() {
 		}
 	}
 
-	result := back1926(N, K, graph)
+	result := baekjoon.Back1926(N, K, graph)
 
 	fmt.Printf("%v \n%v\n", result[0], result[1])
 }
 
 func callBack10773() {
-	fmt.Println(bak10773())
+	fmt.Println(baekjoon.Bak10773())
 }
 
 func callBack1874() {
-	bak1874()
+	baekjoon.Bak1874()
 }
 
 func callBaseDijkstra() {
@@ -105,5 +107,6 @@ func main() {
 	//baek10807()
 	//baek1629()
 	//baek11729()
-	baek1991()
+	//baekjoon.Baek1991()
+	fmt.Println(programers.Solution1("027778888"))
 }
