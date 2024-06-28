@@ -69,6 +69,19 @@ func callBaseDijkstra() {
 	}
 }
 
+func solved_programers_parking() {
+	var (
+		fees []int = []int{
+			180, 5000, 10, 600,
+		}
+		records []string = []string{
+			"05:34 5961 IN", "06:00 0000 IN", "06:34 0000 OUT", "07:59 5961 OUT", "07:59 0148 IN", "18:59 0000 IN", "19:09 0148 OUT", "22:59 5961 IN", "23:00 5961 OUT",
+		}
+	)
+	fmt.Println(programers.Solution3(fees, records))
+
+}
+
 func main() {
 	//callBak1697()
 	//callBack2468()
@@ -108,5 +121,20 @@ func main() {
 	//baek1629()
 	//baek11729()
 	//baekjoon.Baek1991()
-	fmt.Println(programers.Solution1("027778888"))
+	//fmt.Println(programers.Solution1("027778888"))
+	//fmt.Println(
+	//	programers.Solution2([][]string{
+	//		{
+	//			"yellow_hat", "headgear",
+	//		},
+	//		{
+	//			"blue_sunglasses", "eyewear",
+	//		},
+	//		{
+	//			"green_turban", "headgear",
+	//		},
+	//	}),
+	//)
+	solved_programers_parking()
+
 }
