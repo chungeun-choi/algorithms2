@@ -136,6 +136,7 @@ func main() {
 	//	}),
 	//)
 	//solved_programers_parking()
-	baekjoon.Baek14425()
+	//baekjoon.Baek14425()
+	baekjoon.Baek5052()
 
 }
