@@ -20,31 +20,28 @@ func Baek5052() {
 	fmt.Fscanln(reader, &t)
 	for i := 0; i < t; i++ {
 		fmt.Fscanln(reader, &n)
-		var (
-			pi, pj       int = 0, 1
-			phoneNumbers []string
-		)
+		phoneNumbers := make([]string, n)
 
-		phoneNumbers = make([]string, n)
-		for index, _ := range phoneNumbers {
+		for j := 0; j < n; j++ {
 			var phoneNumber string
 			fmt.Fscanln(reader, &phoneNumber)
-			phoneNumbers[index] = phoneNumber
+			phoneNumbers[j] = phoneNumber
 		}
 
 		sort.Strings(phoneNumbers)
+		consistent := true
 
-		for pi < n && pj < n {
-			if strings.HasPrefix(phoneNumbers[pj], phoneNumbers[pi]) {
-				fmt.Println("NO")
+		for k := 0; k < n-1; k++ {
+			if strings.HasPrefix(phoneNumbers[k+1], phoneNumbers[k]) {
+				consistent = false
 				break
-			} else if phoneNumbers[pi] < phoneNumbers[pj] {
-				pj++
-			} else {
-				pi++
 			}
 		}
-		fmt.Println("YES")
-	}
 
+		if consistent {
+			fmt.Fprintln(writer, "YES")
+		} else {
+			fmt.Fprintln(writer, "NO")
+		}
+	}
 }
