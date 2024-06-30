@@ -138,6 +138,7 @@ func main() {
 	//solved_programers_parking()
 	//baekjoon.Baek14425()
 	//baekjoon.Baek5052()
-	baekjoon.Baek7432()
+	//baekjoon.Baek7432()
+	baekjoon.Baek10816()
 
 }
