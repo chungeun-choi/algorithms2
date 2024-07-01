@@ -12,7 +12,7 @@ import (
 const BLANK = -1
 
 // DFS function to find the valid sequence
-func dfs(count int, N int, S []int, X []int) {
+func dfs1469(count int, N int, S []int, X []int) {
 	if count == N {
 		// Print the sequence if valid
 		for _, num := range S {
@@ -41,7 +41,7 @@ func dfs(count int, N int, S []int, X []int) {
 		S[nextIdx] = i
 		S[nextIdx+i+1] = i
 		// Recursively call DFS with updated count
-		dfs(count+1, N, S, X)
+		dfs1469(count+1, N, S, X)
 		// Backtrack and reset the positions to BLANK
 		S[nextIdx] = BLANK
 		S[nextIdx+i+1] = BLANK
@@ -74,7 +74,7 @@ func solve(N int, X []int) {
 	for i := range S {
 		S[i] = BLANK
 	}
-	dfs(0, N, S, X)
+	dfs1469(0, N, S, X)
 	fmt.Println(-1)
 }
 
