@@ -150,5 +150,8 @@ func main() {
 	//baekjoon.Baek10866()
 	//baekjoon.Baek13144()
 	//baekjoon.Baek22862()
-	baekjoon.Baek5567()
+	//baekjoon.Baek5567()
+	//baekjoon.Baek1263()
+	//baekjoon.Baek1325()
+	baekjoon.Baek1931()
 }
